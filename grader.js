@@ -52,7 +52,7 @@ var assertUrlExists = function(url)
 	else
 	    {
 		
-            fs.writeFile("/tmp/test",data,'utf8');
+            fs.writeFile("/tmp/test.html",data,'utf8');
 		return data;
   }
    })
@@ -94,7 +94,7 @@ if(require.main == module) {
     .parse(process.argv);
     if (program.url!="")
     {
-	program.file="/tmp/test";
+	program.file="/tmp/test.html";
     }
     var checkJson = checkHtmlFile(program.file, program.checks);
     var outJson = JSON.stringify(checkJson, null, 4);
