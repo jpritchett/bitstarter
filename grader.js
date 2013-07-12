@@ -25,6 +25,7 @@ var fs = require('fs');
 var program = require('commander');
 var cheerio = require('cheerio');
 var rest= require('restler');
+var sys = require('util');
 
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
@@ -43,7 +44,17 @@ var assertFileExists = function(infile) {
 var assertUrlExists = function(url)
 {
     rest.get(url).on('complete', function(data){
-	return data[0].message;
+	if (data instanceof Error)
+	{
+	    sys.puts('Error:'+data.message);
+	    process.exit(1);
+	}
+	else
+	    {
+		
+            fs.writeFile("/tmp/test",data,'utf8');
+		return data;
+  }
    })
 };
 
@@ -81,6 +92,10 @@ if(require.main == module) {
 
 
     .parse(process.argv);
+    if (program.url!="")
+    {
+	program.file="/tmp/test";
+    }
     var checkJson = checkHtmlFile(program.file, program.checks);
     var outJson = JSON.stringify(checkJson, null, 4);
     console.log(outJson);
