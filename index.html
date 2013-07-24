@@ -116,12 +116,12 @@
   text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
   background: #020031; /* Old browsers */
   background: -moz-linear-gradient(30deg,  #020031 0%, #6d3353 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#cc9966), color-stop(100%,#774f38)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(30deg,  #774f38 0%,#cc9966 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(30deg,  #774f38 0%,#cc9966 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(30deg,  #774f38 0%,#cc9966 100%); /* IE10+ */
-  background: linear-gradient(30deg,  #774f38 0%,#cc9966 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#774f38', endColorstr='#cc9966',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#E08E80), color-stop(100%,#E08E79)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(30deg,  #E08E79 0%,#E08E80 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(30deg,  #E08E79 0%,#E08E80 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(30deg,  #E08E79 0%,#E08E80 100%); /* IE10+ */
+  background: linear-gradient(30deg,  #E08E79 0%,#E08E80 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E08E79', endColorstr='#E08E80',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
      -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
           box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
@@ -276,9 +276,7 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       <div class="row-fluid heading">
         <div class="span12">
           <h1>Lost your phone?</<h1>
-          <h1>Can't find your keys?</h1>
-		  <h1>Wanna snack?</h1>
-
+		  <h1>Want it back?</h1>
 		  </div>
       </div> 
 	<header class="jumbotron subhead" id="overview">
@@ -294,7 +292,7 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">Intelligent software to make your drone useful</p>
+          <p class="lead">Intelligent software to put your drone to work</p>
         </div>
       </div>
 
@@ -302,20 +300,24 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
         <div class="row">
 			<div id="grid" class="span10 offset2">
 				<div class="span4">
+				me with hands in air sat at desk - can't find phone
 				<img class="img-polaroid" src="http://placehold.it/320x200">
 
 				</div>
 				
 				<div class="span4">
+				phone on some other desk under pile of junk
 				<img class="img-polaroid" src="http://placehold.it/320x200">
 
 				</div>
 				
 				<div class="span4">
+				drone searches - and finds! Tells your PC
 				<img class="img-polaroid" src="http://placehold.it/320x200">
 				</div>
 				
 				<div class="span4">
+				drone brings it back in my hand - success!
 				<img class="img-polaroid" src="http://placehold.it/320x200">
 				</div>
 			</div>
@@ -327,7 +329,7 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       <div class="row-fluid pitch">
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
+        <div class="span8 offset2 actions">
           <div class="span8 offset2">
             <div class="statistics">
               <div class="span4">
@@ -335,12 +337,12 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                <h3>0</h3> <p>backers</p>
+                <h3>10</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$0</h3> <p>of $50,000</p>
+                  <h3>$5000</h3> <p>of $50,000</p>
                 </div>
               </div>
               <div class="span4">
@@ -354,20 +356,23 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+              <div class="bar bar-success" style="width: 10%;"></div>
+              <div class="bar bar-warning" style="width: 90%;"></div>
             </div>
           </div>
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
-          </div>
-          <div class="span8 offset2 social">
+            <button class="btn btn-warning btn-large">Preorder The Claw</button>
+			</div>
+			<div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+			<button class="btn btn-googleplus"><i class="icon-googleplus"></i> | Google+</button>
+
           </div>
         </div>
       </div>
@@ -429,25 +434,12 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
+                    So what does phone drone do?
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users.
+                    Phone drone is our software which enables your phone to locate your mobile phone, and other physical objects about your house and transmit back their locations to your PC. With the optional add-on claw, you can even make your drone carry your phone back to you - wherever you are!
                   </div>
                 </div>
               </div>
